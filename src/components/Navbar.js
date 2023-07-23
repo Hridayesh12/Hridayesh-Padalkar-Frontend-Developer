@@ -4,7 +4,7 @@ const Navbar = () => {
             <h2>SpaceX</h2>
             <ul className="text-content flex list-none flex-row justify-between items-center ">
                 <li className="mx-4 cursor-pointer hover:underline transition-all">
-                    Rockets
+                    <a href='#rocket'>Rockets</a>
                 </li>
                 <li className="mx-4 cursor-pointer hover:underline transition-all">
                     <a href='#capsule'>Capsules</a>

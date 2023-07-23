@@ -10,6 +10,7 @@ export default function App() {
       <LandingPage />
       <div className="h-[7px] bg-gradient-to-r from-custom-gradient-start to-custom-gradient-end"></div>
       <Capsules />
+      <div className="h-[7px] bg-gradient-to-r from-custom-gradient-start to-custom-gradient-end"></div>
       <Rockets />
     </div>
   )

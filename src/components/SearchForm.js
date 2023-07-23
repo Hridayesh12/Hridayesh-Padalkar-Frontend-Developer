@@ -184,7 +184,7 @@ const SearchForm = ({ data }) => {
                 <div className="mb-8 flex flex-row gap-2 justify-between items-center text-sm sm:text-base text-white font-medium">
                     <label>Original Launch :</label>
                     <input
-                        className="rounded-md border border-gray-300 py-1 px-1 w-7/12"
+                        className="text-black rounded-md border border-gray-300 py-1 px-1 w-7/12"
                         type="datetime-local" onChange={(e) => { UpdateData(e.target.value, "original_launch") }}
                     ></input>
                 </div>
