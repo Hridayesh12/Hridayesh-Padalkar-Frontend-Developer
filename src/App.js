@@ -1,7 +1,16 @@
+import Capsules from "./components/Capsules";
+import LandingPage from "./components/LandingPage";
+import Navbar from "./components/Navbar";
+import Rockets from "./components/Rockets";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="h-[100%] bg-black text-white">
+      <Navbar />
+      <LandingPage />
+      <div className="h-[7px] bg-gradient-to-r from-custom-gradient-start to-custom-gradient-end"></div>
+      <Capsules />
+      <Rockets />
+    </div>
   )
 }
