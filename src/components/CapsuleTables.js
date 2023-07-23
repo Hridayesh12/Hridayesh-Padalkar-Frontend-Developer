@@ -13,7 +13,7 @@ const CapsuleTables = ({ item }) => {
                 </tr>
             </thead>
             <tbody>
-                {item.map((item) => (
+                {item?.map((item) => (
                     <tr>
                         <td className="border-l-2 border-b-2 border-b-slate-600 border-l-slate-600">{item.capsule_serial}</td>
                         <td className="border-l-2 border-b-2 border-b-slate-600 border-l-slate-600">{item.capsule_id}</td>

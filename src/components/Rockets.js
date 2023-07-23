@@ -16,7 +16,7 @@ const Rockets = () => {
                 All Rockets
             </h3>
             <div id='capsule' className='max-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center justify-center  px-5'>
-                {rocket.map((item) => (
+                {rocket?.map((item) => (
                     <IndividualRocket item={item} />
                 ))}
             </div>
