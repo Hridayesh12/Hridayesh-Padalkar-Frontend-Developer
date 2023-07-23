@@ -1,7 +1,7 @@
 import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
-export default function Details({ item }) {
+export default function CapsuleDetails({ item }) {
     const [open, setOpen] = useState(true)
 
     const cancelButtonRef = useRef(null)
@@ -32,26 +32,20 @@ export default function Details({ item }) {
                             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                         >
-                            <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                                <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                                    <div className="sm:flex sm:items-start">
-                                        <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                            <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                                                {item.capsule_serial}, <span>{item.capsule_id}</span>
-                                            </Dialog.Title>
-                                            <div className="mt-2">
-                                                <p className="text-sm text-gray-500">
-                                                    {item.details}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-[#373737] text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                                <div className='hover:scale-[1.1]  min-h-[100%] rounded-lg text-[1.2rem] flex flex-col items-justify px-5 justify-center  text-gray-500'>
+                                    <h1 className='text-[1.5rem] text-white'> {item.capsule_serial}, <span>{item.capsule_id}</span></h1>
+                                    <h2>Reused {item.reuse_count} times</h2>
+                                    <h2>Missions: {item.missions.length}</h2>
+                                    <h2>Landings: {item.landings}</h2>
+                                    <h2>Status: {item.status === 'active' ? <span className='text-green-500'>{item.status}</span> : item.status === "unknown" ? <>{item.status} </> : item.status === 'retired' || item.status === 'destroyed' ? <span className='text-red-500'>{item.status}</span> : ""}</h2>
+                                    <h2 className='text-white py-2'>{item.details}</h2>
                                 </div>
-                                <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                                <div className="px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
 
                                     <button
                                         type="button"
-                                        className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                                        className="mt-3 inline-flex w-full justify-center rounded-md bg-[#373737] px-3 py-2 text-sm font-semibold text-white hover:text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
                                         onClick={() => setOpen(false)}
                                         ref={cancelButtonRef}
                                     >

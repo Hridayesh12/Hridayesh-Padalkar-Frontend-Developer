@@ -11,8 +11,8 @@ const Rockets = () => {
         fetchingCapsules()
     }, [rocket])
     return (
-        <div id='rocket' className='bg-[#121212] max-width'>
-            <h3 className="text-center text-[3rem] font-medium my-4 text-transparent bg-clip-text bg-gradient-to-r from-custom-gradient-start to-custom-gradient-end">
+        <div id='rocket' className='bg-[#121212] max-width py-10'>
+            <h3 className="text-center text-[3rem] font-medium text-transparent bg-clip-text bg-gradient-to-r from-custom-gradient-start to-custom-gradient-end">
                 All Rockets
             </h3>
             <div id='capsule' className='max-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center justify-center  px-5'>

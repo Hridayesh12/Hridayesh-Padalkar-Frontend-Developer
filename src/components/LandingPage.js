@@ -1,3 +1,4 @@
+import '../App.css'
 const LandingPage = () => {
     return (
         <div className='h-[92vh] bg-hero bg-clip-padding bg-cover full flex flex-col text-center md:text-left md:flex-row'>
@@ -5,9 +6,19 @@ const LandingPage = () => {
                 <h3 className="font-medium font-heading text-[10rem] text-transparent bg-clip-text bg-gradient-to-r from-custom-gradient-start to-custom-gradient-end">
                     SpaceX
                 </h3>
-                <p className="text-[3rem]">
-                    Redefining Space Exploration for a Better Tomorrow.
-                </p>
+                <div className='textAnimation'>
+                    <ul className='typingTxt'>
+                        <li>
+                            <span>Embark on a SpaceX Adventure...</span>
+                        </li>
+                        <li>
+                            <span>Your Gateway to Space Join Us...</span>
+                        </li>
+                        <li>
+                            <span>Redefining Space Exploration...</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     )
