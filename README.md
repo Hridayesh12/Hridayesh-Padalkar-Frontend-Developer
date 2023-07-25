@@ -1,34 +1,40 @@
-# Getting Started with Create React App
 
-The project displays all SpaceX API data successfully.
+# SpaceX
 
-the project is hosted on vercel - [https://hridayesh-padalkar-frontend-developer.vercel.app/]
+This website fetches the data from the spaceX api and displays it in a user friendly format.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+Url - https://hridayesh-padalkar-frontend-developer.vercel.app/
 
-### `npm start`
+Video Link - https://youtu.be/YQLokcHMOus
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Run Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the project
 
-### `npm run build`
+```bash
+  git clone  https://github.com/Hridayesh12/Hridayesh-Padalkar-Frontend-Developer.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Go to the project directory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  cd Hridayesh-Padalkar-Frontend-Developer
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
