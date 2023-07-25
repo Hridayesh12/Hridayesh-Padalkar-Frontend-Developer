@@ -8,7 +8,7 @@ const Capsules = () => {
         const resp = await response.json()
         setData(resp)
     }
-    console.log(data);
+    // console.log(data);
     useEffect(() => {
         fetchingCapsules()
     }, [])

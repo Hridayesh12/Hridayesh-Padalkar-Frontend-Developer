@@ -48,3 +48,22 @@
     left: 0;
   }
 }
+
+
+@media (max-width: 630px) {
+  .textAnimation {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .textAnimation {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .textAnimation {
+    font-size: 1rem;
+  }
+}

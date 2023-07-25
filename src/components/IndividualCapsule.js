@@ -3,7 +3,7 @@ import CapsuleDetails from './CapsuleDetails';
 const IndividualCapsule = ({ item }) => {
     const [showModal, setShowModal] = useState(false);
     return (
-        <div className='hover:scale-[1.1]  min-h-[100%] rounded-lg text-[1.2rem] flex flex-col items-justify px-5 justify-center bg-[#373737] text-gray-500'>
+        <div className='hover:scale-[1.1]  transition-all min-h-[100%] rounded-lg text-[1.2rem] flex flex-col items-justify px-5 justify-center bg-[#373737] text-gray-500'>
             <h1 className='text-[1.5rem] text-white'> {item.capsule_serial}, <span>{item.capsule_id}</span></h1>
 
             <h2 className='text-white py-2'>{item.details}</h2>

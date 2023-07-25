@@ -66,7 +66,7 @@ const SearchForm = ({ data }) => {
             return item.status
         }))]);
     }, [data])
-    console.log(type, status);
+    // console.log(type, status);
     return (
         <div className='bg-[#121212] pt-8'>
             <h3 className="text-center text-[3rem] font-medium text-white mb-8">
