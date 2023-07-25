@@ -1,10 +1,11 @@
 
 # SpaceX
 
-This website fetches the data from the spaceX api and displays it in a user friendly format.
+This website fetches the data from the spaceX API and displays it in a user-friendly format.
 
 
 ## Demo
+
 
 Url - https://hridayesh-padalkar-frontend-developer.vercel.app/
 
